@@ -20,9 +20,13 @@ app.get('/api/news', async (req, res) => {
   }
 
   try {
-    const response = await axios.get(
-      `${BASE_URL}?q=${query}&apiKey=${API_KEY}$language=${lang}`
-    );
+    const response = await axios.get(BASE_URL, {
+      params: {
+        q: query,
+        apiKey: API_KEY,
+        language: lang,
+      },
+    });
     res.json(response.data);
   } catch (error) {
     console.error(error);
