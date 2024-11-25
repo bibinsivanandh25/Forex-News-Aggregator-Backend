@@ -8,7 +8,7 @@ const port = 5000;
 const BASE_URL = 'https://newsapi.org/v2/everything';
 const API_KEY = 'b59fac3a063e4125b1bd5dc3d885938f';
 
-app.use(cors());
+app.use(cors({ origin: '*' }));
 app.use(json());
 
 app.get('/api/news', async (req, res) => {
