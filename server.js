@@ -10,7 +10,7 @@ const API_KEY = 'b59fac3a063e4125b1bd5dc3d885938f';
 
 app.use(
   cors({
-    origin: ['https://forex-news-aggregator-backend.vercel.app'],
+    origin: ['https://forex-news-aggregator.vercel.app'],
     method: ['GET', 'POST'],
     credentials: true,
   })
