@@ -6,7 +6,7 @@ const app = express();
 const port = 5000;
 
 const BASE_URL = 'https://newsapi.org/v2/everything';
-const API_KEY = 'b59fac3a063e4125b1bd5dc3d885938f';
+const API_KEY = '905516ae3b674067b1ea1c360fab558d';
 
 app.use(
   cors({
